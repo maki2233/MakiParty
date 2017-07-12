@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.maki.dao.IUserDao">
+
+<!-- 	<resultMap type="user" id="userMap"> -->
+<!-- 		<result property="userId" column="userId"/> -->
+<!-- 		<result property="userName" column="userName"/> -->
+<!-- 		<result property="userPass" column="uname"/> -->
+<!-- 		<result property="eMail" column="eMail"/> -->
+<!-- 		<result property="name" column="name"/> -->
+<!-- 	</resultMap> -->
+	
+	<select id="showUser"  resultType="user">
+		select * from user 
+	</select>
+	
+	<select id="insertUser"  resultType="user">
+		INSERT into user(userId,userPass,userName,email) VALUES(#{userId},#{userPass},#{userName},#{email})
+	</select>
+	
+	<select id="login"  resultType="user">
+		select * from user where userId = #{userId} and userPass = #{userPass};
+	</select>
+	
+	<select id="selectUser"  resultType="user">
+		select * from user where id = #{id}
+	</select>
+	
+</mapper>
