@@ -11,6 +11,13 @@ import com.opensymphony.xwork2.ActionSupport;
 public class UserAction {
 	private String userId;
 	private String userPass;
+	private String userName;
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
 	public String getUserId() {
 		return userId;
 	}
@@ -24,15 +31,7 @@ public class UserAction {
 		this.userPass = userPass;
 	}
 	
-	private UserModel um;
 	
-	
-	public UserModel getUm() {
-		return um;
-	}
-	public void setUm(UserModel um) {
-		this.um = um;
-	}
 	public String login(){
 		
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -48,9 +47,15 @@ public class UserAction {
 		return null;
 	}
 	
-	public void register(){
+	public String register(){
+		UserModel userModel = new UserModel();
+		userModel.setUserId(userId);
+		userModel.setUserPass(userPass);
+		userModel.setUserName(userName);
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 		IUserService usi = (IUserService) ac.getBean("userServiceImpl");
-		usi.insertUser(um);
+		usi.insertUser(userModel);
+		return "ok";
 	}
+	
 }

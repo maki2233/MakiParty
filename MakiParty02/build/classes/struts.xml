@@ -5,28 +5,30 @@
 <struts>
 	<package name="u" extends="struts-default">
 		<action name="login" class="com.maki.action.UserAction" method="login">
-			<result name="ok">index.jsp</result>
+			<result name="ok" type="redirect">testPosts</result>
 		</action>
 		
 		<action name="register" class="com.maki.action.UserAction" method="register">
+			<result name="ok">show.jsp</result>
 		</action>
-		
+		<action name="test" class="com.maki.action.PostsAction" method="test"></action>
+		<action name="testPosts" class="com.maki.action.PostsAction2" method="testPosts"><result name="ok">show.jsp</result></action>
 		
 	</package>
 	
-	<package name="ajax" extends="json-default">
-		<action name="show" class="com.maki.action.PostsAction" method="show">
-			<result name="ok" type="json">
-				<param name="root">list</param>
-			</result>
-		</action>
+<!-- 	<package name="ajax" extends="json-default"> -->
+<!-- 		<action name="show" class="com.maki.action.PostsAction" method="show"> -->
+<!-- 			<result name="ok" type="json"> -->
+<!-- 				<param name="root">list</param> -->
+<!-- 			</result> -->
+<!-- 		</action> -->
 		
-		<action name="testPosts" class="com.maki.action.PostsAction" method="testPosts">
-			<result name="ok" type="json">
-				<param name="root">list2</param>
-			</result>
-		</action>
-	</package>
+<!-- 		<action name="testPosts" class="com.maki.action.PostsAction" method="testPosts"> -->
+<!-- 			<result name="ok" type="json"> -->
+<!-- 				<param name="root">list2</param> -->
+<!-- 			</result> -->
+<!-- 		</action> -->
+<!-- 	</package> -->
 		
 	
 	

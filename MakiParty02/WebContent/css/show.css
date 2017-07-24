@@ -1,0 +1,175 @@
+.title{
+	height:60px;
+	box-shadow: 1px 1px 3px 3px #888888;
+}
+.ss{
+	height:40px;
+	width:300px;
+	box-shadow: 1px 1px 3px 3px #888888;
+	position: relative;
+	left:15px;
+	top:10px;	
+}
+.user{
+	height:40px;
+	width:300px;
+/* 	border: 1px solid #000000; 	 */
+	position: relative;
+	left:1225px;
+	top:10px;		
+}
+#userP1{
+	color:#000000;
+	font-size:18px; 
+	font:"宋体";
+	position: relative; left:55px; top:-42px;
+}
+.body{
+	height:1000px;
+	width:1400px;
+	position: absolute;
+	left:50%;
+	margin-left:-700px;
+/* 	border: 1px solid #000000;  */
+}
+.ft{
+	width:700px;
+	height:60px;
+	position: relative;
+	top:30px;
+	left:20%;
+	box-shadow: 1px 1px 3px 3px #888888;
+
+}
+.gongneng{
+	position: relative;
+	top:-27px;
+	left:75%;
+	
+}
+.posts{
+	height:295px;
+	width:700px;
+	position: relative;
+	left:20%;
+	top:60px;
+	box-shadow: 1px 1px 3px 3px #888888;	
+}
+.formUser{
+	height:20px;
+	width:650px;
+/* 	border: 1px solid #000000; 	 */
+	position: relative;
+	left:25px;
+	top:30px;		
+}
+.postsTitle{
+	height:30px;
+	width:650px;
+/* 	border: 1px solid #000000; 	 */
+	position: relative;
+	left:25px;
+	top:45px;		
+}
+.postsValue{
+	height:100px;
+	width:650px;
+/* 	border: 1px solid #000000; 	 */
+	position: relative;
+	left:25px;
+	top:60px;	
+}
+.postsFooter{
+	height:30px;
+	width:650px;
+/* 	border: 1px solid #000000; 	 */
+	position: relative;
+	left:25px;
+	top:75px;		
+	
+}
+#formUserName{
+	color:#000000;
+	font-size:16px; 
+	font:"宋体";
+	position: relative;
+	left:45px;
+	top:-47px;	
+}
+#formUserJs{
+	color:#999999;
+	font-size:14px; 
+	font:"宋体";
+	position: relative;
+	left:110px;
+	top:-83px;
+}
+#fromUserTx{
+	position: relative;
+	top:-10px;
+}
+#postsTitle{
+	font-size:26px; 
+	position: relative;
+	top:-15px;
+}
+#postsValue{
+	color:#000000;
+	font-size:16px; 
+	font:"宋体";
+}
+#postsValue2{
+	color:#000000;
+	font-size:16px; 
+	font:"宋体";
+	display: none;
+}
+.zk{
+	display:inline;
+	color:#999999;
+	font-size:16px; 
+	font:"宋体";
+}
+.ding{
+	width:60px;
+	height:30px;
+	background-color: #c6c6c6;
+}
+.cai{
+	width:30px;
+	height:30px;
+	background-color: #c6c6c6;
+	position: relative;
+	top:-30px;
+	left:65px;
+}
+.shang{
+	width:0px;
+	height:0px;
+/* 	background-color: #000000;
+	border-top:10px solid bisque;
+	border-right:10px solid cadetblue;
+	border-bottom:10px solid #0080ff;
+	border-left:10px solid aquamarine; */
+	border-width:0px 10px 10px 10px ;
+	border-color:#999999 transparent;
+	border-style:solid;
+	position: relative;
+	top:10px;
+	left:5px;
+}
+.xia{
+	width:0px;
+	height:0px;
+	border-width:10px 10px 0px 10px ;
+	border-color:#999999 transparent;
+	border-style:solid;
+	position: relative;
+	top:10px;
+	left:5px;
+}
+.pj{
+	position: relative;
+	top:-50px;
+	left:150px;
+}

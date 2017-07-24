@@ -15,60 +15,32 @@ import com.maki.model.UserModel;
 import com.maki.service.IPostsService;
 import com.maki.service.IUserService;
 
-public class PostsAction {
+public class PostsAction2 {
 	private UserModel userModel;
-	private ArrayList<PostsAndUser> list2;
-
 	
-
-	public ArrayList<PostsAndUser> getList2() {
-		return list2;
-	}
-
-
-	public void setList2(ArrayList<PostsAndUser> list2) {
-		this.list2 = list2;
-	}
-
-
 	public UserModel getUserModel() {
 		return userModel;
 	}
 
-	
+
 	public void setUserModel(UserModel userModel) {
 		this.userModel = userModel;
 	}
+
+
+	private List<PostsAndUser> list2;
+
 	
-	private List<PostsModel> list;
-
-	public List<PostsModel> getList() {
-		return list;
-	}
-
-	public void setList(List<PostsModel> list) {
-		this.list = list;
-	}
-	public void test(){
-		System.out.println("hello world");
-		userModel = (UserModel) ServletActionContext.getRequest().getSession().getAttribute("user");
-		System.out.println(userModel.getUserName());
+	public List<PostsAndUser> getList2() {
+		return list2;
 	}
 
 
-	public String show(){
-		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
-		IPostsService psi = (IPostsService) ac.getBean("postsServiceImpl");
-		userModel = (UserModel) ServletActionContext.getRequest().getSession().getAttribute("user");
-		System.out.println(userModel.getId()+" "+userModel.getUserName());
-		
-		list = psi.show();
-		for (PostsModel postsModel : list) {
-			System.out.println(postsModel.getPostsTitle());
-		}
-		return "ok";
+	public void setList2(List<PostsAndUser> list2) {
+		this.list2 = list2;
 	}
 	
+
 	public String testPosts(){
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 		IPostsService psi = (IPostsService) ac.getBean("postsServiceImpl");
@@ -86,12 +58,17 @@ public class PostsAction {
 			pu.setPostsTime(entry.getKey().getPostsTime());
 			pu.setPostsTitle(entry.getKey().getPostsTitle());
 			pu.setPostsValue(entry.getKey().getPostsValue());
-			pu.setUserId(entry.getValue().getUserId());
-			pu.setUserPass(entry.getValue().getUserPass());
+//			pu.setUserId(entry.getValue().getUserId());
+//			pu.setUserPass(entry.getValue().getUserPass());
 			pu.setUserName(entry.getValue().getUserName());
 			listTest.add(pu);
 		}
 		list2 = listTest;
+		String str="ok";
+		System.out.println(str);
+		userModel = (UserModel) ServletActionContext.getRequest().getSession().getAttribute("user");
+
 		return "ok";
 	}
+
 }

@@ -1,9 +1,16 @@
 /* CSS Document */
+
 .d1{
 	
 	height:350px;
-	width:500px; border: 1px solid 
-	#000000; float: left;
+	width:500px; 
+/* 	border: 1px solid #000000;  */
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	
+	margin-left:-250px;
+	margin-top:-175px;
 }
 .t1{/* border:1px solid #000000;*/
 	position: relative; left:10%;
@@ -18,7 +25,7 @@ p2{
 	color:#FFFFFF;
 	font:"宋体";
 	position: relative;
-	left:50px;
+	left:110px;
 	top:3px;
 }
 p33{
@@ -41,7 +48,9 @@ p33{
 }
 .login{
 	height:30px;
-	width:140px; border: 1px solid #0381AA; background:#00A7DE;
+	width:250px; border: 1px solid #0381AA; background:#00A7DE;
+	-moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
 }
 .register{
 	height:30px;
@@ -60,8 +69,10 @@ p3{
 	font-size:16px; color:#990000;
 	font:"宋体";
 	position: relative;
-	left:0px;
+
+	left:110px;
 	top:-2px;
+	
 }
 .code{
 	height:28px;
@@ -69,3 +80,66 @@ p3{
 	border: 1px solid #999999; position: relative; left:-65px;-moz-border-radius: 5px; 
     -webkit-border-radius: 5px;
 }
+
+#f1{
+	display: none;
+}
+
+#f2{
+	display:block;
+}
+p5{
+	color:#0381AA;
+	font-size:18px;
+	font:"宋体";
+	position: relative; left:24px; top:4px;
+}
+p6{
+	color:#999999;
+	font-size:18px; 
+	font:"宋体";
+	position: relative; left:24px; top:4px;
+}
+p7{
+	color:#000000;
+	font-size:18px; 
+	font:"宋体";
+	position: relative; left:24px; top:0px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

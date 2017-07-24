@@ -17,7 +17,7 @@
 	</select>
 	
 	<select id="insertUser"  resultType="user">
-		INSERT into user(userId,userPass,userName,email) VALUES(#{userId},#{userPass},#{userName},#{email})
+		INSERT into user(userId,userPass,userName) VALUES(#{userId},#{userPass},#{userName})
 	</select>
 	
 	<select id="login"  resultType="user">
