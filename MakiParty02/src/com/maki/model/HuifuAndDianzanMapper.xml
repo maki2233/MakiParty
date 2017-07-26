@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.maki.dao.IHuifuAndDianzanDao">
+	
+	<select id="createTable" resultType="had" parameterType="had">
+		create TABLE posts#{id}(id int ,fromId int,fromName VARCHAR(60),zts int,huifu VARCHAR(3000),time VARCHAR(60));
+	</select>
+	
+	
+	<select id="insert"  resultType="had">
+		INSERT into posts(fromName,postsTime,postsTitle,postsValue) VALUES (#{fromName},#{postsTime},#{postsTitle},#{postsValue}); 
+	</select>
+	
+<!-- 	<select id="select" resultType="had"> -->
+<!-- 		select * from posts -->
+<!-- 	</select> -->
+	
+	
+	
+	
+</mapper>

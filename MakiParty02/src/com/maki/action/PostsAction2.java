@@ -54,6 +54,7 @@ public class PostsAction2 {
 		ArrayList<PostsAndUser> listTest = new ArrayList<PostsAndUser>();
 		for(Map.Entry<PostsModel, UserModel> entry:map.entrySet()){
 			PostsAndUser pu = new PostsAndUser();
+			pu.setId(entry.getKey().getId());
 			pu.setFromName(entry.getKey().getFromName());
 			pu.setPostsTime(entry.getKey().getPostsTime());
 			pu.setPostsTitle(entry.getKey().getPostsTitle());

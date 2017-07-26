@@ -36,6 +36,7 @@
 		<s:iterator value="list2" var="user">
 		
 			<div class="posts">
+				<p id="postsId" style="display: none;"><s:property  value="#user.id"/></p>
 				<div class="formUser">
 					<img  id="fromUserTx"src="img/contact.png">
 					<p id="formUserName"><s:property value="#user.userName"/></p>
@@ -59,7 +60,7 @@
 					<div class="dz">
 						<div class="ding">
 							<div class="shang">
-						
+							
 							</div>
 							<p id="ds" style="position: absolute;top:-5px;left:30px;font-size:12px;color:#999999;">123</p>
 						</div>

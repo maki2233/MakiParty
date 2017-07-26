@@ -3,7 +3,6 @@
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.maki.dao.IPostsDao">
-
 	
 	<select id="insertPosts"  resultType="posts">
 		INSERT into posts(fromName,postsTime,postsTitle,postsValue) VALUES (#{fromName},#{postsTime},#{postsTitle},#{postsValue}); 
